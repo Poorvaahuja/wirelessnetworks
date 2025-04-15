@@ -8,11 +8,11 @@ RUN apt update && apt install -y \
     libx11-dev libxmu-dev libxt-dev libxpm-dev \
     libgtk2.0-dev libpcap-dev \
     gawk libssl-dev \
-    git xgraph python3 gnuplot wget unzip
+    git xgraph python3 python3-pip gnuplot wget unzip
 
-# Download and install NS2 (version 2.35 here)
+# Download and install NS2
 RUN cd /opt && \
-    wget https://sourceforge.net/projects/nsnam/files/allinone/ns-allinone-2.35/ns-allinone-2.35.tar.gz && \
+    wget https://sourceforge.net/projects/nsnam/files/allinone/ns-allinone-2.35.tar.gz && \
     tar -xvzf ns-allinone-2.35.tar.gz && \
     cd ns-allinone-2.35 && \
     ./install
