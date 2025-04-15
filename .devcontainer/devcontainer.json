@@ -1,0 +1,9 @@
+{
+  "name": "NS2 Simulator",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
